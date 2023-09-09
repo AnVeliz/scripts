@@ -18,8 +18,8 @@ wget -O ~/Downloads/vscode.tar.gz "https://code.visualstudio.com/sha/download?bu
 if [ ! -d "${DIRECTORY}" ]; then
 mkdir -p "${DIRECTORY}"
 fi
-if [ -d "${DIRECOTRY}/VSCode-linux-x64" ]; then
-rm -rf "${DIRECOTRY}/VSCode-linux-x64"
+if [ -d "${DIRECTORY}/VSCode-linux-x64" ]; then
+rm -rf "${DIRECTORY}/VSCode-linux-x64"
 fi
 tar -xzvf ~/Downloads/vscode.tar.gz -C "${DIRECTORY}"
 
